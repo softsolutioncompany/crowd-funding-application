@@ -22,10 +22,6 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(bodyParser.json({limit: '50mb'}))
 
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 app.use('/', authentication)
 
 app.listen(port, () => {
